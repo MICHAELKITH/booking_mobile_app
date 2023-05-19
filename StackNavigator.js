@@ -24,7 +24,7 @@ const StackNavigator = () => {
             headerShown: false,
             tabBarIcon: ({ focused }) =>
               focused ? (
-                <Entypo name="home" size={24} color="black" />
+                <Entypo name="home" size={24} color="brown" />
               ) : (
                 <AntDesign name="home" size={24} color="black" />
               ),
@@ -39,7 +39,7 @@ const StackNavigator = () => {
             headerShown: false,
             tabBarIcon: ({ focused }) =>
               focused ? (
-                <AntDesign name="heart" size={24} color="black" />
+                <AntDesign name="heart" size={24} color="brown" />
               ) : (
                 <AntDesign name="hearto" size={24} color="black" />
               ),
@@ -54,7 +54,7 @@ const StackNavigator = () => {
             headerShown: false,
             tabBarIcon: ({ focused }) =>
               focused ? (
-                <Ionicons name="notifications" size={24} color="black" />
+                <Ionicons name="notifications" size={24} color="brown" />
               ) : (
                 <Ionicons
                   name="notifications-outline"
@@ -73,7 +73,7 @@ const StackNavigator = () => {
             headerShown: false,
             tabBarIcon: ({ focused }) =>
               focused ? (
-                <Ionicons name="person" size={24} color="black" />
+                <Ionicons name="person" size={24} color="brown" />
               ) : (
                 <Ionicons name="person-outline" size={24} color="black" />
               ),
@@ -87,7 +87,7 @@ const StackNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Main" component={BottomTabs} />
+        <Stack.Screen name="Main" component={BottomTabs} options={{headerShown:false}} />
       </Stack.Navigator>
     </NavigationContainer>
   );
