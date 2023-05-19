@@ -1,15 +1,13 @@
-import { StyleSheet } from 'react-native';
-import React from 'react';
-import HomeScreen from './screens/HomeScreen';
-import SavedScreen from './screens/SavedScreen';
-import BookingScreen from './screens/BookingScreen';
-import ProfileScreen from './screens/ProfileScreen';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { AntDesign } from '@expo/vector-icons';
-import { Entypo } from '@expo/vector-icons';
-import { Ionicons } from '@expo/vector-icons';
+import { StyleSheet } from "react-native";
+import React from "react";
+import HomeScreen from "./screens/HomeScreen";
+import SavedScreen from "./screens/SavedScreen";
+import BookingScreen from "./screens/BookingScreen";
+import ProfileScreen from "./screens/ProfileScreen";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { AntDesign, Ionicons, Entypo } from "@expo/vector-icons";
 
 const StackNavigator = () => {
   const Tab = createBottomTabNavigator();
@@ -22,7 +20,7 @@ const StackNavigator = () => {
           name="Home"
           component={HomeScreen}
           options={{
-            tabBarLabel: 'Home',
+            tabBarLabel: "Home",
             headerShown: false,
             tabBarIcon: ({ focused }) =>
               focused ? (
@@ -37,7 +35,7 @@ const StackNavigator = () => {
           name="Saved"
           component={SavedScreen}
           options={{
-            tabBarLabel: 'Saved',
+            tabBarLabel: "Saved",
             headerShown: false,
             tabBarIcon: ({ focused }) =>
               focused ? (
@@ -52,13 +50,17 @@ const StackNavigator = () => {
           name="Bookings"
           component={BookingScreen}
           options={{
-            tabBarLabel: 'Bookings',
+            tabBarLabel: "Bookings",
             headerShown: false,
             tabBarIcon: ({ focused }) =>
               focused ? (
                 <Ionicons name="notifications" size={24} color="black" />
               ) : (
-                <Ionicons name="notifications-outline" size={24} color="black" />
+                <Ionicons
+                  name="notifications-outline"
+                  size={24}
+                  color="black"
+                />
               ),
           }}
         />
@@ -67,7 +69,7 @@ const StackNavigator = () => {
           name="Profile"
           component={ProfileScreen}
           options={{
-            tabBarLabel: 'Profile',
+            tabBarLabel: "Profile",
             headerShown: false,
             tabBarIcon: ({ focused }) =>
               focused ? (
@@ -81,6 +83,7 @@ const StackNavigator = () => {
     );
   }
 
+  
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -90,3 +93,5 @@ const StackNavigator = () => {
   );
 };
 
+export default StackNavigator;
+const styles = StyleSheet.create({})

@@ -1,19 +1,21 @@
 import 'expo/build/Expo.fx';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
 import StackNavigator from './StackNavigator';
+
 export default function App() {
   return (
-   <>
-    <StackNavigator/>
-   </>
+    <>
+        <StackNavigator />
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'red',
+    backgroundColor: "#ffffff",
     alignItems: 'center',
     justifyContent: 'center',
   },
