@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <View style={{backgroundColor:"brown"}}>
-      <Text>Header</Text>
+      <Text>Hotel Booking App</Text>
     </View>
   )
 }
