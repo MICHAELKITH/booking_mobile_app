@@ -3,8 +3,9 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <View style={{backgroundColor:"brown"}}>
-      <Text>Hotel Booking App</Text>
+    <View style={{backgroundColor:"brown", height: 65, alignItems:"centre", justifyContent:"space-around"}}>
+      <Text style ={{justifyContent: 'center' }}>Furniture Booking</Text>
+      <Text> Items </Text>
     </View>
   )
 }

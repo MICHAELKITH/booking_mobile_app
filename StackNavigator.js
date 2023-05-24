@@ -83,7 +83,6 @@ const StackNavigator = () => {
     );
   }
 
-  
   return (
     <NavigationContainer>
       <Stack.Navigator>
