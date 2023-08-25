@@ -5,8 +5,6 @@ const SavedScreen = () => {
   return (
     <View>
       <Text>SavedScreen</Text>
-      <Text>Hello world</Text>
-      <Text>Hello world</Text>
     </View>
   )
 }
