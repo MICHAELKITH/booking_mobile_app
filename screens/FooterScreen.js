@@ -4,7 +4,7 @@ import React from 'react'
 const FooterScreen = () => {
   return (
     <View>
-      <Text>FooterScreen</Text>
+      <Text>Logo</Text>
     </View>
   )
 }
